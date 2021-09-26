@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document/title>
+  </head>
+  <body>
+    <script>
+      let examen1 = parseInt(prompt("Dime nota examen 1"));
+      let examen2 = parseInt(prompt("Dime nota examen 2"));
+      let examen3 = parseInt(prompt("Dime nota examen 3"));
+
+      let notaFinal = (examen1 + examen2 + examen3) / 3;
+
+      if (notaFinal == 10) {
+        console.log("Su nota final es Matrícula de Honor ");
+      } else if (notaFinal >= 9 && notaFinal < 10) {
+        console.log("Su nota final es Sobresaliente");
+      } else if (notaFinal >= 7 && notaFinal < 9) {
+        console.log("Su nota final es Notable");
+      } else if (notaFinal >= 6 && notaFinal < 7) {
+        console.log("Su nota final es un Bien");
+      } else if (notaFinal >= 5 && notaFinal < 6) {
+        console.log("Su nota final es un Suficiente");
+      } else if (notaFinal >= 0 && notaFinal < 5) {
+        console.log("Su nota final es un Suspenso");
+      } else {
+        console.log("Error");
+      }
+    </script>
+  </body>
+</html>

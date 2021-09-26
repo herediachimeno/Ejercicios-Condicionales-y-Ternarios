@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dia = window.prompt(
+        "Dime un día de la semana en minúscula y sin tildes"
+      );
+
+      /* Ejemplo IF ELSE:
+
+    if (dia == "lunes") {
+        window.alert("Hoy es " + dia);
+      } else if (dia == "martes") {
+        window.alert("Hoy es " + dia);
+      } else if (dia == "miercoles") {
+        window.alert("Hoy es " + dia);
+      } else if (dia == "jueves") {
+        window.alert("Hoy es " + dia);
+      } else if (dia == "viernes") {
+        window.alert("Hoy es " + dia);
+      } else if (dia == "sabado") {
+        window.alert("Hoy es fin de semana");
+      } else if (dia == "domingo") {
+        window.alert("Hoy es fin de semana");
+      } else {
+        window.alert("No has introducido un valor válido");
+      } */
+
+      switch (dia) {
+        case "lunes":
+          window.alert("Hoy es " + dia);
+          break;
+        case "martes":
+          window.alert("Hoy es " + dia);
+          break;
+        case "miercoles":
+          window.alert("Hoy es " + dia);
+          break;
+        case "jueves":
+          window.alert("Hoy es " + dia);
+          break;
+        case "viernes":
+          window.alert("Hoy es " + dia);
+          break;
+        case "sabado":
+          window.alert("Hoy es fin de semana");
+          break;
+        case "domingo":
+          window.alert("Hoy es fin de semana");
+          break;
+        default:
+          window.alert("No has introducido un valor válido");
+          break;
+      }
+    </script>
+  </body>
+</html>

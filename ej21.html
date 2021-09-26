@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 21</title>
+  </head>
+  <body>
+    <script>
+      let nombreUsuario = window.prompt("¿Cuál es su nombre?");
+      let ventas = parseInt(
+        window.prompt("¿Cuál ha sido el precio total de las ventas?")
+      );
+
+      let extra = ventas * 0.05;
+
+      if (ventas < 500) {
+        window.alert(
+          nombreUsuario +
+            ", sus ventas han sido de " +
+            ventas +
+            " euros y no ha alcanzado el objetivo."
+        );
+      } else if (ventas >= 500) {
+        window.alert(
+          nombreUsuario +
+            ", sus ventas han sido de " +
+            ventas +
+            " euros y ha alcanzado el objetivo. Reciba un extra del 5%. En total usted ha ganado " +
+            extra +
+            " euros."
+        );
+      } else {
+        window.alert("Error");
+      }
+    </script>
+  </body>
+</html>

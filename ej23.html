@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let año = parseInt(
+        window.prompt("Indica tu año de nacimiento para saber si fue bisiesto.")
+      );
+
+      if (año % 4 === 0) {
+        window.alert("Tu año de nacimiento fue bisiesto.");
+      } else if (año % 100 === 0 && año % 400 === 0) {
+        window.alert("Tu año de nacimiento fue bisiesto.");
+      } else {
+        window.alert("Tu año de nacimiento no fue bisiesto");
+      }
+    </script>
+  </body>
+</html>

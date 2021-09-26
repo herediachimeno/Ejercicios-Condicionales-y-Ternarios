@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <script>
+      let helados = parseInt(
+        window.prompt("¿Cuántos helados quieres comprar?")
+      );
+      let precio = 2;
+
+      if (helados < 10) {
+        window.alert(
+          "Has comprado " +
+            helados +
+            " y tienes que pagar " +
+            helados * precio +
+            " euros."
+        );
+      } else if (helados == 10) {
+        window.alert(
+          "Has comprado " +
+            helados +
+            " y tienes que pagar " +
+            helados * precio +
+            " euros." +
+            " ¡Felicidades! Te llevas uno más de regalo."
+        );
+      } else if (helados > 10) {
+        window.alert(
+          "Has comprado " +
+            helados +
+            " y tienes que pagar " +
+            helados * precio +
+            " euros." +
+            "¡Felicidades! Te llevas uno más de regalo."
+        );
+      }
+    </script>
+  </body>
+</html>

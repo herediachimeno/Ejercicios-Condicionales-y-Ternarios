@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document 20</title>
+  </head>
+  <body>
+    <script>
+      let num1 = parseFloat(window.prompt("Introduce un número"));
+      let valor = window.prompt(
+        "Indique si desea pasarlo a Centígrados (C) o a Fahrenheit (F)"
+      );
+
+      let centigrados = num1 - (32 * 5) / 9;
+      let fahrenheit = (num1 * 9) / 5 + 32;
+
+      if (valor == "C") {
+        window.alert(
+          "El número introducido en centígrados es de " + centigrados
+        );
+      } else if (valor == "F") {
+        window.alert("El número introducido en fahrenheit es de " + fahrenheit);
+      } else {
+        window.alert("Error");
+      }
+    </script>
+  </body>
+</html>

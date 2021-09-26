@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let enteroString1 = window.prompt("Dime un valor entero entre 25 y 75");
+      let enteroString2 = window.prompt("Dime otro valor entero entre 25 y 75");
+
+      let num1 = parseInt(enteroString1);
+      let num2 = parseInt(enteroString2);
+
+      if (num1 > 25 && num1 < 75 && num2 > 25 && num2 < 75) {
+        let string1 = enteroString1.substring(0, 1);
+        let string2 = enteroString1.substring(1);
+        let string3 = enteroString2.substring(0, 1);
+        let string4 = enteroString2.substring(1);
+        if (
+          string1 === string3 ||
+          string1 === string4 ||
+          string2 === string3 ||
+          string2 === string4
+        ) {
+          console.log("Hay dos números iguales");
+        } else {
+          console.log("No hay ningún número igual");
+        }
+      } else {
+        console.log(
+          "Los números que has elegido no se encuentran entre el 25 y el 75"
+        );
+      }
+    </script>
+  </body>
+</html>

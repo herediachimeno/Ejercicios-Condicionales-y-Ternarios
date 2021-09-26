@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let estaciones = window.prompt(
+        "¿Qué estación prefieres? ¿Primavera, Verano, Otoño o Invierno?"
+      );
+
+      //IF
+
+      if (estaciones == "Primavera") {
+        window.alert("Es primavera");
+      } else if (estaciones == "Verano") {
+        window.alert("Es verano");
+      } else if (estaciones == "Otoño") {
+        window.alert("Es otoño");
+      } else if (estaciones == "Invierno") {
+        window.alert("Es invierno");
+      } else {
+        window.alert("La estación introducida no es válida.");
+      }
+
+      //CON SWITCH
+
+      let estaciones2 = window.prompt(
+        "¿Quñe estación prefieres? ¿Primavera, Verano, Otoño o Invierno?"
+      );
+
+      switch (estaciones2) {
+        case "Primavera":
+          window.alert("Es primavera");
+          break;
+        case "Verano":
+          window.alert("Es verano");
+          break;
+        case "Otoño":
+          window.alert("Es otoño");
+          break;
+        case "Invierno":
+          window.alert("Es invierno!");
+          break;
+        default:
+          window.alert("La estación introducida no es válida.");
+          break;
+      }
+    </script>
+  </body>
+</html>

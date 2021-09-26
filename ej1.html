@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num1 = parseInt(prompt("Dame un número"));
+      let num2 = parseInt(prompt("Dame otro número"));
+
+      let suma = num1 + num2;
+      let resta = num1 - num2;
+      let multi = num1 * num2;
+      let media = suma / 2;
+
+      console.log("Los números seleccionados son " + num1 + " y " + num2);
+
+      console.log("La suma es " + suma);
+      console.log("La resta es " + resta);
+      console.log("La multiplicación es " + multi);
+      console.log("La media es " + media);
+
+      if (num1 > num2) {
+        console.log(
+          "El número más pequeño es " + num2 + " y el más grande " + num1
+        );
+      } else {
+        console.log(
+          "El número más pequeño es " + num1 + " y el más grande " + num2
+        );
+      }
+    </script>
+  </body>
+</html>

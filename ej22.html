@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 22</title>
+  </head>
+  <body>
+    <script>
+      let edadUsuario = parseInt(window.prompt("¿Qué edad tiene?"));
+
+      if (edadUsuario < 18) {
+        window.alert("Es menor de edad y no puede alquilar ningún vehiculo.");
+      } else if (edadUsuario >= 18) {
+        let carneConducir = window.prompt(
+          "¿Dispone usted de carnet de conducir?"
+        );
+        if (carneConducir == "No") {
+          window.alert(
+            "No puede alquilar un vehiculo porque no dispone de carné de conducir."
+          );
+        } else if (carneConducir == "Si") {
+          let nombreUsuario = window.prompt(
+            "Indique su nombre y sus apellidos."
+          );
+          let ciudad = window.prompt(
+            "¿Cuál es la ciudad de recogida del vehiculo?"
+          );
+          let dias = window.prompt("¿Cuántos días desea alquilar el vehiculo?");
+
+          let costeDia = 25;
+          let costeSemana = 150;
+          let totalDias = dias * costeDia;
+          let coste = 0;
+
+          if (dias < 7) {
+            coste = totalDias;
+          } else {
+            let numeroSemanas = dias / 7;
+            coste = numeroSemanas * 150;
+          }
+
+          window.alert(
+            "Señor/a " +
+              nombreUsuario +
+              ", usted ha alquilado un vehiculo en " +
+              ciudad +
+              " durante " +
+              dias +
+              " días. El coste total del alquiler es de " +
+              totalDias +
+              " euros."
+          );
+        }
+      } else {
+        window.alert("Error");
+      }
+    </script>
+  </body>
+</html>

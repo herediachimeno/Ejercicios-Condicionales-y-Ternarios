@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let string = window.prompt("Dime un string");
+
+      let mensaje =
+        string.indexOf("r") != -1
+          ? "El string CONTIENE la letra r"
+          : "El string NO contiene la letra r";
+
+      window.alert(mensaje);
+    </script>
+  </body>
+</html>

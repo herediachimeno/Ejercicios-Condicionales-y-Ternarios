@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numUsuarioString = window.prompt("Indica un número de tres cifras.");
+      let numUsuario = parseInt(numUsuarioString);
+
+      let stringA = numUsuarioString.substring(0, 1);
+      let stringB = numUsuarioString.substring(1, 2);
+      let stringC = numUsuarioString.substring(2);
+
+      if (stringA % 2 === 0 && stringB % 2 === 0 && stringC % 2 === 0) {
+        window.alert("todos son pares");
+      } else if (stringA % 2 != 0 && stringB % 2 != 0 && stringC != 0) {
+        window.alert("todos son impares");
+      } else if (stringA % 2 === 0 || stringB % 2 === 0 || stringC % 2 === 0) {
+        window.alert("el número tiene cifras pares e impares");
+      }
+    </script>
+  </body>
+</html>

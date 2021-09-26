@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let examen1 = parseInt(window.prompt("Nota primer examen"));
+      let examen2 = parseInt(window.prompt("Nota segundo examen"));
+      let examen3 = parseInt(window.prompt("Nota tercer examen"));
+
+      let suma;
+
+      suma = (examen1 + examen2 + examen3) / 3;
+
+      let mensaje =
+        suma < 5
+          ? `Has sacado un ${suma}, has suspendido`
+          : suma < 6
+          ? `Has sacado un ${suma}, has sacado un suficiente`
+          : suma < 7
+          ? `Has sacado un ${suma}, has sacado un bien`
+          : suma < 9
+          ? `Has sacado un ${suma}, has sacado un notable.`
+          : suma < 10
+          ? `Has sacado un ${suma}, ¡has sacado un sobresaliente!`
+          : `Has sacado un ${suma}, ¡tienes matrícula de honor!`;
+
+      console.log(mensaje);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let valor1 = parseInt(prompt("Dame un valor"));
+      let valor2 = parseInt(prompt("Dame otro valor"));
+
+      resto1 = valor1 % 6;
+      resto2 = valor2 % 6;
+
+      if (valor1 == valor2) {
+        window.alert("0");
+      } else if (resto1 == resto2) {
+        if (valor1 > valor2) {
+          window.alert("Mostramos valor más alto: " + valor1);
+        } else if (valor2 > valor1) {
+          window.alert("Mostramos valor más alto: " + valor2);
+        }
+      } else {
+        window.alert(
+          "Como el resto dividido entre seis de los valores no son iguales no mostramos nada"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let edadMayor = parseInt(window.prompt("¿Qué edad tiene tu hijo mayor?"));
+      let diferenciaMenor = parseInt(
+        window.prompt("¿Cuántos años de diferencia se lleva con el menor?")
+      );
+      let edad = edadMayor - diferenciaMenor;
+
+      let mensaje =
+        edad >= 18
+          ? "El hermano menor ES mayor de edad"
+          : "El hermano menor NO es mayor de edad.";
+
+      window.alert(mensaje);
+    </script>
+  </body>
+</html>

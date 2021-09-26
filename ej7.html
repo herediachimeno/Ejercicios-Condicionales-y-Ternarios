@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numerador = parseInt(prompt("Di el numerador"));
+      let denominador = parseInt(prompt("Ahora dime el denominador"));
+
+      if (denominador !== 0) {
+        let division = numerador / denominador;
+        window.alert(
+          "El resultado de dividir numerador y denominador es " + division
+        );
+      } else {
+        window.alert("No se puede dividir por cero");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let temp = parseInt(prompt("Dime la temperatura en celsius"));
+
+      if (temp > 40) {
+        window.alert("Vete a otro sitio");
+      } else if (temp <= 40 && temp > 30) {
+        window.alert("Enciende el aire acondicionado");
+      } else if (temp <= 30 && temp >= 20) {
+        window.alert("No hagas nada");
+      } else if (temp < 20 && temp >= 10) {
+        window.alert("Enciende la calefacción");
+      } else if (temp < 10) {
+        window.alert("Vete a otro sitio");
+      }
+    </script>
+  </body>
+</html>
